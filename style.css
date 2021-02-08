@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+    background-color: #FAFAFA;
+}
+
+:root{
+    --red-color : hsl(0, 78%, 62%);
+    --cyan-color : hsl(180, 62%, 55%);
+    --orange-color : hsl(34, 97%, 64%);
+    --blue-color : hsl(212, 86%, 64%);
+
+}
+
+main{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.head-1{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.head-2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.para{
+    font-weight: 200;
+    margin: auto;
+    width: 550px;
+}
+
+section{
+    width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    background-color: #fff;
+    height : 200px;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 16px 0px hsl(229, 47%, 89%);
+    position: relative;
+    margin-bottom: 1.5rem !important;
+}
+
+.box-heading{
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.grid-1, .grid-3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-2 >div{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+}
+
+
+.box-subhead{
+    line-height: 1rem;
+    font-size: .7rem;
+    font-weight: 200;
+    width: 90%;
+}
+
+.box img{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.box-1{
+    border-top: 4px solid var(--cyan-color);
+}
+
+.box-2{
+    border-top: 4px solid var(--orange-color);
+}
+
+.box-3{
+    border-top: 4px solid var(--red-color);
+}
+
+.box-4{
+    border-top: 4px solid var(--blue-color);
+}
+
+@media screen and (max-width : 1023px){
+    section{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .para{
+        font-size: .8rem;
+        max-width: 320px;
+    }
+}
